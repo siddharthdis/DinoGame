@@ -1,0 +1,11 @@
+Username: gamer
+Password: 123456
+
+
+
+If wanted to change the credentials you go to the code and change it.
+
+username_field.text == 'gamerand' password_field.text == '123456'
+			   ^	 		             ^
+		           |				     |
+			username			  password

@@ -1,0 +1,86 @@
+site_name: Dino Game
+site_description: "Jurassic Run" is an endless runner game set in a prehistoric world. Players control a character, likely a dinosaur, running through an environment filled with obstacles such as cacti. The objective is to survive for as long as possible by avoiding obstacles and collecting points. As the game progresses, the speed increases, making it more challenging to navigate the terrain. The game features a simple menu interface with options to play and quit the game. Additionally, there's a loading screen to transition between the menu and the gameplay. Overall, "Jurassic Run" offers fast-paced gameplay with a focus on reflexes and endurance.
+site_author: siddharthdis
+site_url: https://siddharthdis.github.io/Dino Game
+repo_url: https://github.com/siddharthdis/Dino Game
+
+copyright: "Copyright &copy; 2024 - 2024 Siddharth Yadav"
+
+theme:
+    palette:
+        - scheme: default
+          #   primary: blue
+          #   accent: indigo
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to dark mode
+        - scheme: slate
+          primary: indigo
+          accent: indigo
+          toggle:
+              icon: material/toggle-switch
+              name: Switch to light mode
+    name: material
+    icon:
+        repo: fontawesome/brands/github
+    # logo: assets/logo.png
+    # favicon: assets/favicon.png
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.top
+        - search.highlight
+        - search.share
+    custom_dir: "docs/overrides"
+    font:
+        text: Google Sans
+        code: Regular
+
+plugins:
+    - search
+    - mkdocstrings
+    - git-revision-date
+    - git-revision-date-localized:
+          enable_creation_date: true
+          type: timeago
+    # - pdf-export
+    - mkdocs-jupyter:
+          include_source: True
+          ignore_h1_titles: True
+          execute: True
+          allow_errors: false
+          ignore: ["conf.py"]
+          execute_ignore: ["*ignore.ipynb"]
+          
+markdown_extensions:
+    - admonition
+    - abbr
+    - attr_list
+    - def_list
+    - footnotes
+    - meta
+    - md_in_html
+    - pymdownx.superfences
+    - pymdownx.highlight:
+          linenums: true
+    - toc:
+          permalink: true
+
+# extra:
+#     analytics:
+#         provider: google
+#         property: UA-XXXXXXXXX-X
+
+nav:
+    - Home: index.md
+    - Installation: installation.md
+    - Usage: usage.md
+    - Contributing: contributing.md
+    - FAQ: faq.md
+    - Changelog: changelog.md
+    - Report Issues: https://github.com/siddharthdis/Dino Game/issues
+    - Examples:
+        - examples/intro.ipynb
+    - API Reference:
+          - dino_game module: dino_game.md
+          - common module: common.md

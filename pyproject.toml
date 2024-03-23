@@ -1,0 +1,82 @@
+[project]
+name = "Dino Game"
+version = "0.0.1"
+dynamic = [
+    "dependencies",
+]
+description = ""Jurassic Run" is an endless runner game set in a prehistoric world. Players control a character, likely a dinosaur, running through an environment filled with obstacles such as cacti. The objective is to survive for as long as possible by avoiding obstacles and collecting points. As the game progresses, the speed increases, making it more challenging to navigate the terrain. The game features a simple menu interface with options to play and quit the game. Additionally, there's a loading screen to transition between the menu and the gameplay. Overall, "Jurassic Run" offers fast-paced gameplay with a focus on reflexes and endurance."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = [
+    "Dino Game",
+]
+license = {text = "MIT License"}
+authors = [
+  {name = "Siddharth Yadav", email = "siddharthdis3432"},
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.entry-points."console_scripts"]
+dino_game = "dino_game.cli:main"
+
+[project.optional-dependencies]
+all = [
+    "Dino Game[extra]",
+]
+
+extra = [
+    "pandas",
+]
+
+
+[tool]
+[tool.setuptools.packages.find]
+include = ["dino_game*"]
+exclude = ["docs*"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+
+[tool.bumpversion]
+current_version = "0.0.1"
+commit = true
+tag = true
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "dino_game/__init__.py"
+search = '__version__ = "{current_version}"'
+replace = '__version__ = "{new_version}"'
+
+
+[tool.flake8]
+exclude = [
+    "docs",
+]
+max-line-length = 88
+
+
+[project.urls]
+Homepage = "https://github.com/siddharthdis/Dino Game"
+
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
