@@ -1,17 +1,61 @@
-# Dino Game
+# Jurassic Run
 
-
-[![image](https://img.shields.io/pypi/v/Dino Game.svg)](https://pypi.python.org/pypi/Dino Game)
-[![image](https://img.shields.io/conda/vn/conda-forge/Dino Game.svg)](https://anaconda.org/conda-forge/Dino Game)
-
-
-**"Jurassic Run" is an endless runner game set in a prehistoric world. Players control a character, likely a dinosaur, running through an environment filled with obstacles such as cacti. The objective is to survive for as long as possible by avoiding obstacles and collecting points. As the game progresses, the speed increases, making it more challenging to navigate the terrain. The game features a simple menu interface with options to play and quit the game. Additionally, there's a loading screen to transition between the menu and the gameplay. Overall, "Jurassic Run" offers fast-paced gameplay with a focus on reflexes and endurance.**
-
-
--   Free software: MIT License
--   Documentation: https://siddharthdis.github.io/Dino Game
-    
+Jurassic Run is an exhilarating endless runner game set in a vibrant prehistoric world. Dodge obstacles, collect points, and race against time as you control your character through dynamically changing landscapes.
 
 ## Features
 
--   TODO
+- Fast-paced endless runner gameplay
+- Intuitive controls for seamless navigation
+- Vibrant prehistoric environments with stunning visuals
+- Increasing difficulty as the game progresses
+- User-friendly menu interface for easy navigation
+- Immersive sound effects to enhance the gaming experience
+
+## Installation
+
+1. Clone the repository:
+
+```
+
+git clone https://github.com/your-username/jurassic-run.git
+```
+
+
+2. Navigate to the project directory:
+
+
+3. Run the game:
+
+
+## How to Play
+
+- Use the arrow keys or WASD keys to move your character.
+- Dodge obstacles and collect points to increase your score.
+- Survive as long as possible to achieve the highest score.
+## Default credentials
+- Username: ```gamer```
+- Password: ```123456```
+## To change the credentials
+```
+ -username_field.text == 'gamer' and password_field.text == '123456'
+```
+- You can change credentials by changing the credentials here ```gamer``` and ```123456```
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or would like to report a bug, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+Special thanks to the Ursina game engine developers for providing the framework used in this project.
+
+## Contact
+
+For any inquiries or feedback, please contact [siddharthdis3432@gamil.com](siddharthdis3432@gamil.com).
+
+Enjoy the game!
+
