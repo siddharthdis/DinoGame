@@ -55,7 +55,7 @@ Special thanks to the Ursina game engine developers for providing the framework 
 
 ## Contact
 
-For any inquiries or feedback, please contact [siddharthdis3432@gamil.com](siddharthdis3432@gamil.com).
+For any inquiries or feedback, please contact [siddharthdis3432@gmail.com](mailto:siddharthdis3432@gmail.com).
 
 Enjoy the game!
 
